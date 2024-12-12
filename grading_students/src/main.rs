@@ -6,7 +6,7 @@ fn next_multiple_of_5(number: i32) -> i32 {
     }
 }
 
-fn gradingStudents(grades: &[i32]) -> Vec<i32> {
+fn grading_students(grades: &[i32]) -> Vec<i32> {
     let mut rounded_grades = Vec::new();
     for grade in grades {
         let smallest_grade= 38;
@@ -26,6 +26,6 @@ fn gradingStudents(grades: &[i32]) -> Vec<i32> {
 
 fn main() {
     let num_vectors =   vec![73,67,38,33];
-    let result = gradingStudents(&num_vectors);
+    let result = grading_students(&num_vectors);
     println!("{:?}",result);
 }
